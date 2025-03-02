@@ -593,11 +593,7 @@
 		4869879A2D7513790020025A /* NSDictionary+KPKAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 486987962D7513790020025A /* NSDictionary+KPKAttributes.m */; };
 		4869879B2D7513790020025A /* NSDictionary+KPKAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 486987972D7513790020025A /* NSDictionary+KPKAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4869879D2D75140A0020025A /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 4869879C2D75140A0020025A /* Cartfile */; };
-		486987A32D751E530020025A /* KPKSynchronizationChangesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4869879E2D751E530020025A /* KPKSynchronizationChangesStore.m */; };
-		486987A42D751E530020025A /* KPKSynchronizationChangesStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4869879F2D751E530020025A /* KPKSynchronizationChangesStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		486987A52D751E530020025A /* KPKSynchronizationChangesStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 486987A02D751E530020025A /* KPKSynchronizationChangesStore_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		486987A62D751E530020025A /* KPKSynchronizationChangesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 486987A12D751E530020025A /* KPKSynchronizationChangesItem.m */; };
-		486987A72D751E530020025A /* KPKSynchronizationChangesItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 486987A22D751E530020025A /* KPKSynchronizationChangesItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		486987B62D7522C20020025A /* KPKSynchronizationChangesStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 486987A92D7520F00020025A /* KPKSynchronizationChangesStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C059B6420D4577300655B99 /* KPKTestBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C059B6320D4577300655B99 /* KPKTestBinary.m */; };
 		4C09495F1FD6F5B8004F2971 /* NSData+KPKBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */; };
 		4C0949601FD6F5B8004F2971 /* NSData+KPKBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */; };
@@ -1176,11 +1172,11 @@
 		486987962D7513790020025A /* NSDictionary+KPKAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KPKAttributes.m"; sourceTree = "<group>"; };
 		486987972D7513790020025A /* NSDictionary+KPKAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KPKAttributes.h"; sourceTree = "<group>"; };
 		4869879C2D75140A0020025A /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		4869879E2D751E530020025A /* KPKSynchronizationChangesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKSynchronizationChangesStore.m; sourceTree = "<group>"; };
-		4869879F2D751E530020025A /* KPKSynchronizationChangesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKSynchronizationChangesStore.h; sourceTree = "<group>"; };
-		486987A02D751E530020025A /* KPKSynchronizationChangesStore_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKSynchronizationChangesStore_Private.h; sourceTree = "<group>"; };
-		486987A12D751E530020025A /* KPKSynchronizationChangesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKSynchronizationChangesItem.m; sourceTree = "<group>"; };
-		486987A22D751E530020025A /* KPKSynchronizationChangesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKSynchronizationChangesItem.h; sourceTree = "<group>"; };
+		486987A82D7520F00020025A /* KPKSynchronizationChangesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKSynchronizationChangesStore.m; sourceTree = "<group>"; };
+		486987A92D7520F00020025A /* KPKSynchronizationChangesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKSynchronizationChangesStore.h; sourceTree = "<group>"; };
+		486987AA2D7520F00020025A /* KPKSynchronizationChangesStore_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKSynchronizationChangesStore_Private.h; sourceTree = "<group>"; };
+		486987AB2D7520F00020025A /* KPKSynchronizationChangesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKSynchronizationChangesItem.m; sourceTree = "<group>"; };
+		486987AC2D7520F00020025A /* KPKSynchronizationChangesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKSynchronizationChangesItem.h; sourceTree = "<group>"; };
 		4C059B6320D4577300655B99 /* KPKTestBinary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPKTestBinary.m; sourceTree = "<group>"; };
 		4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+KPKBase32.h"; sourceTree = "<group>"; };
 		4C09495E1FD6F5B8004F2971 /* NSData+KPKBase32.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+KPKBase32.m"; sourceTree = "<group>"; };
@@ -1856,11 +1852,11 @@
 		4C5CF3E01BE10E000019AA81 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4869879E2D751E530020025A /* KPKSynchronizationChangesStore.m */,
-				4869879F2D751E530020025A /* KPKSynchronizationChangesStore.h */,
-				486987A02D751E530020025A /* KPKSynchronizationChangesStore_Private.h */,
-				486987A12D751E530020025A /* KPKSynchronizationChangesItem.m */,
-				486987A22D751E530020025A /* KPKSynchronizationChangesItem.h */,
+				486987A82D7520F00020025A /* KPKSynchronizationChangesStore.m */,
+				486987A92D7520F00020025A /* KPKSynchronizationChangesStore.h */,
+				486987AA2D7520F00020025A /* KPKSynchronizationChangesStore_Private.h */,
+				486987AB2D7520F00020025A /* KPKSynchronizationChangesItem.m */,
+				486987AC2D7520F00020025A /* KPKSynchronizationChangesItem.h */,
 				4C5CF3E11BE10E000019AA81 /* KPKAttribute.h */,
 				4C62F6231D1D77DE0031795C /* KPKAttribute_Private.h */,
 				4C5CF3E21BE10E000019AA81 /* KPKAttribute.m */,
@@ -2501,9 +2497,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				486987A42D751E530020025A /* KPKSynchronizationChangesStore.h in Headers */,
-				486987A52D751E530020025A /* KPKSynchronizationChangesStore_Private.h in Headers */,
-				486987A72D751E530020025A /* KPKSynchronizationChangesItem.h in Headers */,
 				486987832D7512FD0020025A /* KPKArgon2IDKeyDerivation.h in Headers */,
 				486987852D7512FD0020025A /* KPKArgon2DKeyDerivation.h in Headers */,
 				4869878E2D7513270020025A /* KPKTimeOTPGenerator.h in Headers */,
@@ -2550,6 +2543,7 @@
 				4C5CF41B1BE10E000019AA81 /* KPKNode.h in Headers */,
 				4C15091D1C74AD10008A2C8E /* KPKMetaData_Private.h in Headers */,
 				4C5C82A61D79C13800A1DEA6 /* KPKCipher.h in Headers */,
+				486987B62D7522C20020025A /* KPKSynchronizationChangesStore.h in Headers */,
 				4C5CF4221BE10E000019AA81 /* KPKTree.h in Headers */,
 				4C5CF4101BE10E000019AA81 /* KPKEntry.h in Headers */,
 				4C0B9DAE1DBFB4FC00E66CD6 /* KPKXmlTreeReader.h in Headers */,
@@ -2572,6 +2566,7 @@
 				4C09495F1FD6F5B8004F2971 /* NSData+KPKBase32.h in Headers */,
 				4C4E23031D7DC10700E58983 /* NSDictionary+KPKVariant.h in Headers */,
 				4C5CF3CE1BE10DF80019AA81 /* NSData+KPKRandom.h in Headers */,
+				4C7C3F9E1D81D620008D8961 /* KPKCompositeKey.h in Headers */,
 				4C5CF3DC1BE10DF80019AA81 /* NSString+KPKXmlUtilities.h in Headers */,
 				4C5CF3D61BE10DF80019AA81 /* NSString+KPKCommands.h in Headers */,
 				4C0B9D7D1DBFADE200E66CD6 /* KPKUnarchiver_Private.h in Headers */,
@@ -3482,7 +3477,6 @@
 				486987842D7512FD0020025A /* KPKArgon2DKeyDerivation.m in Sources */,
 				4C860E371FA781B1002C8BA5 /* KPKTree+FormatSupport.m in Sources */,
 				4C5CF45A1BE10E100019AA81 /* KPKDataStreamWriter.m in Sources */,
-				486987A62D751E530020025A /* KPKSynchronizationChangesItem.m in Sources */,
 				4C5CF4921BE10E250019AA81 /* KPKUTIs.m in Sources */,
 				486987822D7512FD0020025A /* KPKArgon2IDKeyDerivation.m in Sources */,
 				4C5CF3C91BE10DF80019AA81 /* NSData+KPKGzip.m in Sources */,
@@ -3501,7 +3495,6 @@
 				4C4E23041D7DC10700E58983 /* NSDictionary+KPKVariant.m in Sources */,
 				4C7C3F9A1D81D620008D8961 /* KPKAESKeyDerivation.m in Sources */,
 				4C0B9D911DBFB49600E66CD6 /* KPKRandomStream.m in Sources */,
-				486987A32D751E530020025A /* KPKSynchronizationChangesStore.m in Sources */,
 				4C0B9DB51DBFB4FC00E66CD6 /* KPKKdbUnarchiver.m in Sources */,
 				486987922D7513280020025A /* KPKHmacOTPGenerator.m in Sources */,
 				4CA6DB8F1DC3574200650417 /* KPKChaCha20RandomStream.m in Sources */,

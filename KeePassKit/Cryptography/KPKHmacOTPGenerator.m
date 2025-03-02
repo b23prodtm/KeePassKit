@@ -36,6 +36,17 @@
   return self;
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+  KPKHmacOTPGenerator *copy = [super copyWithZone:zone];
+  copy.counter = self.counter;
+  return copy;
+}
+
+- (NSString *)description {
+  NSString *baseString = [super description];
+  return [baseString stringByAppendingFormat:@" counter:%ld", self.counter];
+}
+
 - (void)saveCounterToEntry:(KPKEntry *)entry {
   KPKAttribute *urlAttribute = [entry attributeWithKey:kKPKAttributeKeyOTPOAuthURL];
   if(urlAttribute) {
@@ -110,19 +121,17 @@
   
   KPKAttribute *counterAttribute = attributeDict[kKPKAttributeKeyHmacOTPCounter];
   self.counter = counterAttribute.evaluatedValue.integerValue; // defaults to 0 when no counter was found
-
+  
   return YES;
 }
 
-- (void)saveToEntry:(KPKEntry *)entry {
-  /**
+- (void)saveToEntry:(KPKEntry *)entry options:(KPKOTPSaveOptions)options {
+  /*
    strategy ist to add a otp attribute regardless of the current state
    update or add KeePass native settings regardless of current state
    
    This leads to entries having at least the otp and the native settings
    */
-  
-  
   NSString *urlString = [NSURL URLWithHmacOTPKey:self.key algorithm:self.hashAlgorithm issuer:[self _issuerForEntry:entry] counter:self.counter digits:self.numberOfDigits].absoluteString;
   KPKAttribute *urlAttribute = [entry attributeWithKey:kKPKAttributeKeyOTPOAuthURL];
   /* update or create the URL attribute */
@@ -131,12 +140,11 @@
     [entry addCustomAttribute:urlAttribute];
   }
   else {
+    // might be nil, but that's ok
     urlAttribute.value = urlString;
   }
   
-  
   /* HTOP Settings */
-
   KPKAttribute *asciiKeyAttribute = [entry attributeWithKey:kKPKAttributeKeyHmacOTPSecret];
   KPKAttribute *hexKeyAttribute = [entry attributeWithKey:kKPKAttributeKeyHmacOTPSecretHex];
   KPKAttribute *base32KeyAttribute = [entry attributeWithKey:kKPKAttributeKeyHmacOTPSecretBase32];

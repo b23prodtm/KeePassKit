@@ -79,7 +79,20 @@ KPKOTPHashAlgorithm algoritmForString(NSString *string) {
   return self;
 }
 
-- (void)saveToEntry:(KPKEntry *)entry {
+- (id)copyWithZone:(NSZone *)zone {
+  KPKTimeOTPGenerator *copy = [super copyWithZone:zone];
+  copy.timeBase = self.timeBase;
+  copy.timeSlice = self.timeSlice;
+  copy.time = self.time;
+  return copy;
+}
+
+- (NSString *)description {
+  NSString *baseString = [super description];
+  return [baseString stringByAppendingFormat:@" timeBase:%f timeSlice:%ld time:%f", self.timeBase, self.timeSlice, self.time];
+}
+
+- (void)saveToEntry:(KPKEntry *)entry options:(KPKOTPSaveOptions)options {
   /**
    strategy ist to add a otp attribute regardless of the current state
    update KeeOTP settings if any where present
@@ -151,7 +164,7 @@ KPKOTPHashAlgorithm algoritmForString(NSString *string) {
     }
   }
   if(!secretStored) {
-    secretBase32Attribute = [[KPKAttribute alloc] initWithKey:kKPKAttributeKeyHmacOTPSecretBase32 value:[self.key base32EncodedStringWithOptions:0]];
+    secretBase32Attribute = [[KPKAttribute alloc] initWithKey:kKPKAttributeKeyTimeOTPSecretBase32 value:[self.key base32EncodedStringWithOptions:0]];
     [entry addCustomAttribute:secretBase32Attribute];
   }
   
@@ -314,9 +327,6 @@ KPKOTPHashAlgorithm algoritmForString(NSString *string) {
   
   if(authURL.key.length != 0) {
     self.key = authURL.key;
-  }
-  else {
-    return NO; // key is mandatory!
   }
   
   if(authURL.digits > 0) {

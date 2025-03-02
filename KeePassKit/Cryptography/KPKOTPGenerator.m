@@ -74,6 +74,22 @@ static NSUInteger const KPKOTPDefaultNumberOfDigits = 6;
   }
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+  KPKOTPGenerator *copy = [[self.class alloc] _init];
+  copy.key = self.key;
+  copy.hashAlgorithm = self.hashAlgorithm;
+  copy.numberOfDigits = self.numberOfDigits;
+  return copy;
+}
+
+- (NSString *)description {
+  return [NSString stringWithFormat:@"%@: key:%@ algorithm:%@ numberOfDigits:%lu",
+          self.class,
+          self.key,
+          [KPKOTPGenerator stringForAlgorithm:self.hashAlgorithm],
+          (unsigned long)self.numberOfDigits];
+}
+
 - (instancetype)_init {
   self = [super init];
   if(self) {
@@ -91,6 +107,10 @@ static NSUInteger const KPKOTPDefaultNumberOfDigits = 6;
 
 - (NSString *)_alphabet {
   return @"0123456789";
+}
+
+- (BOOL)_reverseCodeGeneration {
+  return NO;
 }
 
 - (NSString *)_issuerForEntry:(KPKEntry *)entry {
@@ -122,6 +142,10 @@ static NSUInteger const KPKOTPDefaultNumberOfDigits = 6;
 }
 
 - (void)saveToEntry:(KPKEntry *)entry {
+  [self saveToEntry:entry options:KPKOTPSaveOptionDefault];
+}
+
+- (void)saveToEntry:(KPKEntry *)entry options:(KPKOTPSaveOptions)options {
   [self doesNotRecognizeSelector:_cmd];
 }
 
@@ -142,10 +166,16 @@ static NSUInteger const KPKOTPDefaultNumberOfDigits = 6;
   NSString *alphabet = [self _alphabet];
   NSUInteger alphabetLength = alphabet.length;
   NSMutableString *result = [[NSMutableString alloc] init];
+  BOOL shouldAppend = [self _reverseCodeGeneration];
   while(result.length < self.numberOfDigits) {
     NSUInteger code = decimal % alphabetLength;
     if(code < alphabetLength) {
-      [result insertString:[alphabet substringWithRange:NSMakeRange(code, 1)] atIndex:0];
+      if(shouldAppend) {
+        [result appendString:[alphabet substringWithRange:NSMakeRange(code, 1)]];
+      }
+      else {
+        [result insertString:[alphabet substringWithRange:NSMakeRange(code, 1)] atIndex:0];
+      }
     }
     else {
       return @""; // falure

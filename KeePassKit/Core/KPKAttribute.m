@@ -166,9 +166,9 @@
     [self.entry.undoManager setActionName:[NSString stringWithFormat:template, self.key ]];
   }
   [self.entry touchModified];
-  [NSNotificationCenter.defaultCenter postNotificationName:KPKWillChangeAttributeNotification object:self.entry userInfo:@{ KPKAttributeKeyKey : self.key}];
+  [NSNotificationCenter.defaultCenter postNotificationName:KPKWillChangeAttributeNotification object:self];
   [self _encodeValue:value];
-  [NSNotificationCenter.defaultCenter postNotificationName:KPKDidChangeAttributeNotification object:self.entry userInfo:@{ KPKAttributeKeyKey : self.key}];
+  [NSNotificationCenter.defaultCenter postNotificationName:KPKDidChangeAttributeNotification object:self];
 }
 
 - (void)setKey:(NSString *)key {
@@ -180,9 +180,9 @@
   }
   [[self.entry.undoManager prepareWithInvocationTarget:self] setKey:self.key];
   [self.entry touchModified];
-  [NSNotificationCenter.defaultCenter postNotificationName:KPKWillChangeAttributeNotification object:self.entry userInfo:@{ KPKAttributeKeyKey : self.key}];
+  [NSNotificationCenter.defaultCenter postNotificationName:KPKWillChangeAttributeNotification object:self];
   _key = [key copy];
-  [NSNotificationCenter.defaultCenter postNotificationName:KPKWillChangeAttributeNotification object:self.entry userInfo:@{ KPKAttributeKeyKey : self.key}];
+  [NSNotificationCenter.defaultCenter postNotificationName:KPKDidChangeAttributeNotification object:self];
 }
 
 - (void)setProtect:(BOOL)protected {
@@ -200,9 +200,9 @@
       [self.entry.undoManager setActionName:template];
     }
   }
-  [NSNotificationCenter.defaultCenter postNotificationName:KPKWillChangeAttributeNotification object:self.entry userInfo:@{ KPKAttributeKeyKey : self.key }];
+  [NSNotificationCenter.defaultCenter postNotificationName:KPKWillChangeAttributeNotification object:self];
   _protect = protected;
-  [NSNotificationCenter.defaultCenter postNotificationName:KPKDidChangeAttributeNotification object:self.entry userInfo:@{ KPKAttributeKeyKey : self.key }];
+  [NSNotificationCenter.defaultCenter postNotificationName:KPKDidChangeAttributeNotification object:self];
   
 }
 

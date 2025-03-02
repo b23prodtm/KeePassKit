@@ -26,6 +26,16 @@ NSString *const KPKSteamOTPGeneratorSettingsValue = @"S";
   return @"23456789BCDFGHJKMNPQRTVWXY";
 }
 
+- (BOOL)_validateOptions {
+  return (self.numberOfDigits == self.defaultNumberOfDigits
+          && self.hashAlgorithm == self.defaultHashAlgoritm
+          && self.timeSlice == self.defaultTimeSlice);
+}
+
+- (BOOL)_reverseCodeGeneration {
+  return YES;
+}
+
 - (instancetype)initWithEntry:(KPKEntry *)entry {
   self = [self init];
   if(self) {
@@ -38,7 +48,7 @@ NSString *const KPKSteamOTPGeneratorSettingsValue = @"S";
   return KPKSteamOTPGeneratorDigits;
 }
 
-- (void)saveToEntry:(KPKEntry *)entry {
+- (void)saveToEntry:(KPKEntry *)entry options:(KPKOTPSaveOptions)options {
   /**
    KeePassXC uses a custom otpauth url so we use this first.
    Additionally we update any KeeTrayOTP settings
@@ -107,6 +117,9 @@ NSString *const KPKSteamOTPGeneratorSettingsValue = @"S";
       
       NSArray <NSString *> *parts = [settingsAttribute.evaluatedValue componentsSeparatedByString:@";"];
       self.timeSlice = parts.firstObject.integerValue;
+      if(self.timeSlice != 30) {
+        NSLog(@"Warning. Steam uses a 30s time intervall. Using %ld might lead to invalid codes", self.timeSlice);
+      }
       NSString *numberOfDigits = parts[1];
       if(NSOrderedSame != [numberOfDigits compare:KPKSteamOTPGeneratorSettingsValue options:NSCaseInsensitiveSearch]) {
         return NO; // invalid special key for Stream
@@ -122,18 +135,15 @@ NSString *const KPKSteamOTPGeneratorSettingsValue = @"S";
     return NO;
   }
   
-  if([authURL.encoder.lowercaseString isEqualToString:kKPKURLSteamEncoderValue]) {
+  if(![authURL.encoder.lowercaseString isEqualToString:kKPKURLSteamEncoderValue]) {
     return NO; // invalid encoder!
   }
   
   if(authURL.key.length != 0) {
     self.key = authURL.key;
   }
-  else {
-    return NO; // key is mandatory!
-  }
   
-  /* TODO: we should not need to parse this since Steam requires fixed settings */
+  /* FIXME: we should not need to parse this since Steam requires fixed settings */
   
   if(authURL.digits > 0) {
     self.numberOfDigits = authURL.digits;
