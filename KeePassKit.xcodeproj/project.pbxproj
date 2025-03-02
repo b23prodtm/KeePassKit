@@ -579,6 +579,50 @@
 		2D90B2811F35647400CED467 /* KPKPair_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5C62E61EC99ACC0026061E /* KPKPair_Private.h */; };
 		2D90B2821F35647500CED467 /* KPKPair_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5C62E61EC99ACC0026061E /* KPKPair_Private.h */; };
 		2D90B2831F35647500CED467 /* KPKPair_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5C62E61EC99ACC0026061E /* KPKPair_Private.h */; };
+		48AE241E2D74757B0061058F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23D02D74757B0061058F /* .gitignore */; };
+		48AE241F2D74757B0061058F /* .hgignore in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23D12D74757B0061058F /* .hgignore */; };
+		48AE24202D74757B0061058F /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23D22D74757B0061058F /* .swift-version */; };
+		48AE24212D74757B0061058F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23D32D74757B0061058F /* .travis.yml */; };
+		48AE24222D74757B0061058F /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23D42D74757B0061058F /* Gemfile */; };
+		48AE24232D74757B0061058F /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23D52D74757B0061058F /* Gemfile.lock */; };
+		48AE24242D74757B0061058F /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE23D82D74757B0061058F /* DDXMLElementAdditions.h */; };
+		48AE24252D74757B0061058F /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE23D92D74757B0061058F /* DDXMLElementAdditions.m */; };
+		48AE24262D74757B0061058F /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE23DB2D74757B0061058F /* NSString+DDXML.h */; };
+		48AE24272D74757B0061058F /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE23DC2D74757B0061058F /* NSString+DDXML.m */; };
+		48AE24282D74757B0061058F /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE23DD2D74757B0061058F /* DDXML.h */; };
+		48AE24292D74757B0061058F /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE23DE2D74757B0061058F /* DDXMLDocument.h */; };
+		48AE242A2D74757B0061058F /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE23DF2D74757B0061058F /* DDXMLDocument.m */; };
+		48AE242B2D74757B0061058F /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE23E02D74757B0061058F /* DDXMLElement.h */; };
+		48AE242C2D74757B0061058F /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE23E12D74757B0061058F /* DDXMLElement.m */; };
+		48AE242D2D74757B0061058F /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE23E22D74757B0061058F /* DDXMLNode.h */; };
+		48AE242E2D74757B0061058F /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE23E32D74757B0061058F /* DDXMLNode.m */; };
+		48AE242F2D74757B0061058F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23E42D74757B0061058F /* Info.plist */; };
+		48AE24302D74757B0061058F /* KissXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE23E52D74757B0061058F /* KissXML.h */; };
+		48AE24312D74757B0061058F /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE23E82D74757B0061058F /* DDXMLPrivate.h */; };
+		48AE24322D74757B0061058F /* KissXML.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23E92D74757B0061058F /* KissXML.podspec */; };
+		48AE24332D74757B0061058F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23ED2D74757B0061058F /* LICENSE.txt */; };
+		48AE24342D74757B0061058F /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE23EE2D74757B0061058F /* Package.swift */; };
+		48AE24352D74757B0061058F /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 48AE23EF2D74757B0061058F /* README.markdown */; };
+		48AE24362D74757B0061058F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23F22D74757B0061058F /* Info.plist */; };
+		48AE24372D74757B0061058F /* KissXML.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23FA2D74757B0061058F /* KissXML.xcworkspace */; };
+		48AE24382D74757B0061058F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23FC2D74757B0061058F /* Info.plist */; };
+		48AE24392D74757B0061058F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23FD2D74757B0061058F /* Podfile */; };
+		48AE243A2D74757B0061058F /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 48AE23FE2D74757B0061058F /* Podfile.lock */; };
+		48AE243B2D74757B0061058F /* KissXML.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24032D74757B0061058F /* KissXML.xcworkspace */; };
+		48AE243C2D74757B0061058F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24052D74757B0061058F /* Info.plist */; };
+		48AE243D2D74757B0061058F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24062D74757B0061058F /* Podfile */; };
+		48AE243E2D74757B0061058F /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24072D74757B0061058F /* Podfile.lock */; };
+		48AE243F2D74757B0061058F /* KissXMLAssertionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE24092D74757B0061058F /* KissXMLAssertionTests.m */; };
+		48AE24402D74757B0061058F /* KissXMLSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE240A2D74757B0061058F /* KissXMLSwiftTests.swift */; };
+		48AE24412D74757B0061058F /* KissXMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE240B2D74757B0061058F /* KissXMLTests.m */; };
+		48AE24422D74757B0061058F /* KissXML.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24102D74757B0061058F /* KissXML.xcworkspace */; };
+		48AE24432D74757B0061058F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24122D74757B0061058F /* Info.plist */; };
+		48AE24442D74757B0061058F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24132D74757B0061058F /* Podfile */; };
+		48AE24452D74757B0061058F /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24142D74757B0061058F /* Podfile.lock */; };
+		48AE24462D74757B0061058F /* KissXML.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 48AE24192D74757B0061058F /* KissXML.xcworkspace */; };
+		48AE24472D74757B0061058F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48AE241B2D74757B0061058F /* Info.plist */; };
+		48AE24482D74757B0061058F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 48AE241C2D74757B0061058F /* Podfile */; };
+		48AE24492D74757B0061058F /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 48AE241D2D74757B0061058F /* Podfile.lock */; };
 		4C059B6420D4577300655B99 /* KPKTestBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C059B6320D4577300655B99 /* KPKTestBinary.m */; };
 		4C09495F1FD6F5B8004F2971 /* NSData+KPKBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */; };
 		4C0949601FD6F5B8004F2971 /* NSData+KPKBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */; };
@@ -1076,6 +1120,83 @@
 			remoteGlobalIDString = 2D5125691E9BD24500D7EAF6;
 			remoteInfo = "KeePassKit tvOS";
 		};
+		48AE244B2D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE24162D74757B0061058F /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63F8CF1D1C5C1285000D126C;
+			remoteInfo = KissXMLSwiftTests;
+		};
+		48AE244E2D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE240D2D74757B0061058F /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9DB38791C5845BA003E55FB;
+			remoteInfo = KissXMLSwiftTests;
+		};
+		48AE24512D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE24002D74757B0061058F /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9AA72541C56EEF500002BEE;
+			remoteInfo = KissXMLTests;
+		};
+		48AE24572D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE23EA2D74757B0061058F /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DCD8DCA1E54A3A3001D9832;
+			remoteInfo = "KissXML (iOS)";
+		};
+		48AE24592D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE23EA2D74757B0061058F /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D94131BA1E5CEBE700189BD5;
+			remoteInfo = "KissXML (macOS)";
+		};
+		48AE245B2D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE23EA2D74757B0061058F /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D94131D31E5CEC8300189BD5;
+			remoteInfo = "KissXML (tvOS)";
+		};
+		48AE245D2D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE23EA2D74757B0061058F /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D94131EC1E5CECC700189BD5;
+			remoteInfo = "KissXML (watchOS)";
+		};
+		48AE24602D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE23F72D74757B0061058F /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D92F89CF1C582AEE008C1F90;
+			remoteInfo = KissXMLTests;
+		};
+		48AE24662D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE23F32D74757B0061058F /* KissXMLTests.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9AA72541C56EEF500002BEE;
+			remoteInfo = "KissXMLTests (iOS)";
+		};
+		48AE24682D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE23F32D74757B0061058F /* KissXMLTests.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D94132151E5CF00B00189BD5;
+			remoteInfo = "KissXMLTests (macOS)";
+		};
+		48AE246A2D74757C0061058F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48AE23F32D74757B0061058F /* KissXMLTests.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D94132261E5CF14400189BD5;
+			remoteInfo = "KissXMLTests (tvOS)";
+		};
 		4C5CF3241BE10B650019AA81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C5CF30F1BE10B650019AA81 /* Project object */;
@@ -1139,6 +1260,57 @@
 		2D5126731E9BD29500D7EAF6 /* KeePassKitTests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KeePassKitTests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D51273D1E9BD34900D7EAF6 /* KeePassKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeePassKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D51273F1E9C642D00D7EAF6 /* ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ref.c; sourceTree = "<group>"; };
+		48AE23D02D74757B0061058F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		48AE23D12D74757B0061058F /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
+		48AE23D22D74757B0061058F /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		48AE23D32D74757B0061058F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		48AE23D42D74757B0061058F /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		48AE23D52D74757B0061058F /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		48AE23D82D74757B0061058F /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		48AE23D92D74757B0061058F /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		48AE23DB2D74757B0061058F /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		48AE23DC2D74757B0061058F /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		48AE23DD2D74757B0061058F /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		48AE23DE2D74757B0061058F /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		48AE23DF2D74757B0061058F /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		48AE23E02D74757B0061058F /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		48AE23E12D74757B0061058F /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		48AE23E22D74757B0061058F /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		48AE23E32D74757B0061058F /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		48AE23E42D74757B0061058F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AE23E52D74757B0061058F /* KissXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML.h; sourceTree = "<group>"; };
+		48AE23E62D74757B0061058F /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		48AE23E82D74757B0061058F /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		48AE23E92D74757B0061058F /* KissXML.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KissXML.podspec; sourceTree = "<group>"; };
+		48AE23EA2D74757B0061058F /* KissXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KissXML.xcodeproj; sourceTree = "<group>"; };
+		48AE23ED2D74757B0061058F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		48AE23EE2D74757B0061058F /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		48AE23EF2D74757B0061058F /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		48AE23F22D74757B0061058F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AE23F32D74757B0061058F /* KissXMLTests.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KissXMLTests.xcodeproj; sourceTree = "<group>"; };
+		48AE23F72D74757B0061058F /* KissXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KissXML.xcodeproj; sourceTree = "<group>"; };
+		48AE23FA2D74757B0061058F /* KissXML.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = KissXML.xcworkspace; sourceTree = "<group>"; };
+		48AE23FC2D74757B0061058F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AE23FD2D74757B0061058F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		48AE23FE2D74757B0061058F /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		48AE24002D74757B0061058F /* KissXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KissXML.xcodeproj; sourceTree = "<group>"; };
+		48AE24032D74757B0061058F /* KissXML.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = KissXML.xcworkspace; sourceTree = "<group>"; };
+		48AE24052D74757B0061058F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AE24062D74757B0061058F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		48AE24072D74757B0061058F /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		48AE24092D74757B0061058F /* KissXMLAssertionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KissXMLAssertionTests.m; sourceTree = "<group>"; };
+		48AE240A2D74757B0061058F /* KissXMLSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KissXMLSwiftTests.swift; sourceTree = "<group>"; };
+		48AE240B2D74757B0061058F /* KissXMLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KissXMLTests.m; sourceTree = "<group>"; };
+		48AE240D2D74757B0061058F /* KissXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KissXML.xcodeproj; sourceTree = "<group>"; };
+		48AE24102D74757B0061058F /* KissXML.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = KissXML.xcworkspace; sourceTree = "<group>"; };
+		48AE24122D74757B0061058F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AE24132D74757B0061058F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		48AE24142D74757B0061058F /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		48AE24162D74757B0061058F /* KissXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KissXML.xcodeproj; sourceTree = "<group>"; };
+		48AE24192D74757B0061058F /* KissXML.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = KissXML.xcworkspace; sourceTree = "<group>"; };
+		48AE241B2D74757B0061058F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AE241C2D74757B0061058F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		48AE241D2D74757B0061058F /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		4C059B6320D4577300655B99 /* KPKTestBinary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPKTestBinary.m; sourceTree = "<group>"; };
 		4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+KPKBase32.h"; sourceTree = "<group>"; };
 		4C09495E1FD6F5B8004F2971 /* NSData+KPKBase32.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+KPKBase32.m"; sourceTree = "<group>"; };
@@ -1504,6 +1676,237 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48AE23CF2D74757B0061058F /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23D02D74757B0061058F /* .gitignore */,
+				48AE23D12D74757B0061058F /* .hgignore */,
+				48AE23D22D74757B0061058F /* .swift-version */,
+				48AE23D32D74757B0061058F /* .travis.yml */,
+				48AE23D42D74757B0061058F /* Gemfile */,
+				48AE23D52D74757B0061058F /* Gemfile.lock */,
+				48AE23D62D74757B0061058F /* KissXML */,
+				48AE23E92D74757B0061058F /* KissXML.podspec */,
+				48AE23EA2D74757B0061058F /* KissXML.xcodeproj */,
+				48AE23ED2D74757B0061058F /* LICENSE.txt */,
+				48AE23EE2D74757B0061058F /* Package.swift */,
+				48AE23EF2D74757B0061058F /* README.markdown */,
+				48AE23F02D74757B0061058F /* Tests */,
+			);
+			path = KissXML;
+			sourceTree = "<group>";
+		};
+		48AE23D62D74757B0061058F /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23D72D74757B0061058F /* Additions */,
+				48AE23DA2D74757B0061058F /* Categories */,
+				48AE23DD2D74757B0061058F /* DDXML.h */,
+				48AE23DE2D74757B0061058F /* DDXMLDocument.h */,
+				48AE23DF2D74757B0061058F /* DDXMLDocument.m */,
+				48AE23E02D74757B0061058F /* DDXMLElement.h */,
+				48AE23E12D74757B0061058F /* DDXMLElement.m */,
+				48AE23E22D74757B0061058F /* DDXMLNode.h */,
+				48AE23E32D74757B0061058F /* DDXMLNode.m */,
+				48AE23E42D74757B0061058F /* Info.plist */,
+				48AE23E52D74757B0061058F /* KissXML.h */,
+				48AE23E62D74757B0061058F /* module.modulemap */,
+				48AE23E72D74757B0061058F /* Private */,
+			);
+			path = KissXML;
+			sourceTree = "<group>";
+		};
+		48AE23D72D74757B0061058F /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23D82D74757B0061058F /* DDXMLElementAdditions.h */,
+				48AE23D92D74757B0061058F /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		48AE23DA2D74757B0061058F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23DB2D74757B0061058F /* NSString+DDXML.h */,
+				48AE23DC2D74757B0061058F /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		48AE23E72D74757B0061058F /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23E82D74757B0061058F /* DDXMLPrivate.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		48AE23EB2D74757B0061058F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24582D74757C0061058F /* KissXML.framework */,
+				48AE245A2D74757C0061058F /* KissXML.framework */,
+				48AE245C2D74757C0061058F /* KissXML.framework */,
+				48AE245E2D74757C0061058F /* KissXML.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48AE23F02D74757B0061058F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23F12D74757B0061058F /* Framework */,
+				48AE23F62D74757B0061058F /* iOS */,
+				48AE23FF2D74757B0061058F /* Mac */,
+				48AE24082D74757B0061058F /* Shared */,
+				48AE240C2D74757B0061058F /* Swift */,
+				48AE24152D74757B0061058F /* Swift-iOS */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		48AE23F12D74757B0061058F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23F22D74757B0061058F /* Info.plist */,
+				48AE23F32D74757B0061058F /* KissXMLTests.xcodeproj */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		48AE23F42D74757B0061058F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24672D74757C0061058F /* KissXMLTests.xctest */,
+				48AE24692D74757C0061058F /* KissXMLTests.xctest */,
+				48AE246B2D74757C0061058F /* KissXMLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48AE23F62D74757B0061058F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23F72D74757B0061058F /* KissXML.xcodeproj */,
+				48AE23FA2D74757B0061058F /* KissXML.xcworkspace */,
+				48AE23FB2D74757B0061058F /* KissXMLTests */,
+				48AE23FD2D74757B0061058F /* Podfile */,
+				48AE23FE2D74757B0061058F /* Podfile.lock */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		48AE23F82D74757B0061058F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24612D74757C0061058F /* KissXMLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48AE23FB2D74757B0061058F /* KissXMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				48AE23FC2D74757B0061058F /* Info.plist */,
+			);
+			path = KissXMLTests;
+			sourceTree = "<group>";
+		};
+		48AE23FF2D74757B0061058F /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24002D74757B0061058F /* KissXML.xcodeproj */,
+				48AE24032D74757B0061058F /* KissXML.xcworkspace */,
+				48AE24042D74757B0061058F /* KissXMLTests */,
+				48AE24062D74757B0061058F /* Podfile */,
+				48AE24072D74757B0061058F /* Podfile.lock */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		48AE24012D74757B0061058F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24522D74757C0061058F /* KissXMLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48AE24042D74757B0061058F /* KissXMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24052D74757B0061058F /* Info.plist */,
+			);
+			path = KissXMLTests;
+			sourceTree = "<group>";
+		};
+		48AE24082D74757B0061058F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24092D74757B0061058F /* KissXMLAssertionTests.m */,
+				48AE240A2D74757B0061058F /* KissXMLSwiftTests.swift */,
+				48AE240B2D74757B0061058F /* KissXMLTests.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		48AE240C2D74757B0061058F /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				48AE240D2D74757B0061058F /* KissXML.xcodeproj */,
+				48AE24102D74757B0061058F /* KissXML.xcworkspace */,
+				48AE24112D74757B0061058F /* KissXMLSwiftTests */,
+				48AE24132D74757B0061058F /* Podfile */,
+				48AE24142D74757B0061058F /* Podfile.lock */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		48AE240E2D74757B0061058F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48AE244F2D74757C0061058F /* KissXMLSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48AE24112D74757B0061058F /* KissXMLSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24122D74757B0061058F /* Info.plist */,
+			);
+			path = KissXMLSwiftTests;
+			sourceTree = "<group>";
+		};
+		48AE24152D74757B0061058F /* Swift-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				48AE24162D74757B0061058F /* KissXML.xcodeproj */,
+				48AE24192D74757B0061058F /* KissXML.xcworkspace */,
+				48AE241A2D74757B0061058F /* KissXMLSwiftTests */,
+				48AE241C2D74757B0061058F /* Podfile */,
+				48AE241D2D74757B0061058F /* Podfile.lock */,
+			);
+			path = "Swift-iOS";
+			sourceTree = "<group>";
+		};
+		48AE24172D74757B0061058F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48AE244C2D74757C0061058F /* KissXMLSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48AE241A2D74757B0061058F /* KissXMLSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				48AE241B2D74757B0061058F /* Info.plist */,
+			);
+			path = KissXMLSwiftTests;
+			sourceTree = "<group>";
+		};
 		4C0B9D871DBFB49600E66CD6 /* Streams */ = {
 			isa = PBXGroup;
 			children = (
@@ -1649,6 +2052,7 @@
 		4C5CF30E1BE10B650019AA81 = {
 			isa = PBXGroup;
 			children = (
+				48AE23CF2D74757B0061058F /* KissXML */,
 				4CA1E49A1D8832C400100002 /* Argon2 */,
 				4C2602101DB110930069B059 /* ChaCha20 */,
 				4C11184B1DCCD93F00254E1D /* TwoFish */,
@@ -2443,6 +2847,7 @@
 			files = (
 				4C8990FB1EE981940043B48D /* KPKReferenceBuilder.h in Headers */,
 				4C5A1C31214C128E00FB4CFA /* KPKCommandEvaluationContext.h in Headers */,
+				48AE24302D74757B0061058F /* KissXML.h in Headers */,
 				4C5CF31C1BE10B650019AA81 /* KeePassKit.h in Headers */,
 				4C5CF3C41BE10DF80019AA81 /* NSUIColor+KPKAdditions.h in Headers */,
 				4C5C82A21D79C13800A1DEA6 /* KPKAESCipher.h in Headers */,
@@ -2458,6 +2863,7 @@
 				4CBE26331EC595D200B93BE2 /* KPKPair.h in Headers */,
 				4C1032171EB38E4400FD605F /* KPKSynchronizationOptions.h in Headers */,
 				4CDA35721EB88621003CD59F /* KPKScopedSet.h in Headers */,
+				48AE24242D74757B0061058F /* DDXMLElementAdditions.h in Headers */,
 				4C1118491DCCD90100254E1D /* KPKTwofishCipher.h in Headers */,
 				4CA1E4881D8832BA00100002 /* blake2.h in Headers */,
 				4C5CF4901BE10E250019AA81 /* KPKTypes.h in Headers */,
@@ -2474,11 +2880,14 @@
 				4C5CF41B1BE10E000019AA81 /* KPKNode.h in Headers */,
 				4C15091D1C74AD10008A2C8E /* KPKMetaData_Private.h in Headers */,
 				4C5C82A61D79C13800A1DEA6 /* KPKCipher.h in Headers */,
+				48AE24292D74757B0061058F /* DDXMLDocument.h in Headers */,
 				4C5CF4221BE10E000019AA81 /* KPKTree.h in Headers */,
 				4C5CF4101BE10E000019AA81 /* KPKEntry.h in Headers */,
 				4C0B9DAE1DBFB4FC00E66CD6 /* KPKXmlTreeReader.h in Headers */,
 				4C5CF4141BE10E000019AA81 /* KPKGroup.h in Headers */,
+				48AE24282D74757B0061058F /* DDXML.h in Headers */,
 				4C7C3F991D81D620008D8961 /* KPKAESKeyDerivation.h in Headers */,
+				48AE24262D74757B0061058F /* NSString+DDXML.h in Headers */,
 				4C5C82A41D79C13800A1DEA6 /* KPKChaCha20Cipher.h in Headers */,
 				4C639E551F6AC9AB00E6C5CD /* NSUIImage+KPKAdditions.h in Headers */,
 				4CA1E3441D87F5ED00100002 /* KPKArgon2KeyDerivation.h in Headers */,
@@ -2488,6 +2897,8 @@
 				4C5CF4071BE10E000019AA81 /* KPKAutotype.h in Headers */,
 				4C7C3FA21D81D620008D8961 /* KPKKey.h in Headers */,
 				4C5CF4251BE10E000019AA81 /* KPKWindowAssociation.h in Headers */,
+				48AE242B2D74757B0061058F /* DDXMLElement.h in Headers */,
+				48AE242D2D74757B0061058F /* DDXMLNode.h in Headers */,
 				4C2ADBED1D7C6495002C3190 /* KPKArchiver.h in Headers */,
 				4C5CF4311BE10E070019AA81 /* KPKKdbxFormat.h in Headers */,
 				4C0B9DAA1DBFB4FC00E66CD6 /* KPKKdbxUnarchiver.h in Headers */,
@@ -2540,6 +2951,7 @@
 				4C5CF4571BE10E100019AA81 /* KPKDataStreamReader.h in Headers */,
 				4C0B9DB21DBFB4FC00E66CD6 /* KPKKdbArchiver.h in Headers */,
 				4C5CF42F1BE10E070019AA81 /* KPKKdbFormat.h in Headers */,
+				48AE24312D74757B0061058F /* DDXMLPrivate.h in Headers */,
 				4C4A641E1FDBF2D200FD120F /* KPKOTPGenerator.h in Headers */,
 				4C5CF40F1BE10E000019AA81 /* KPKEntry_Private.h in Headers */,
 				4C5CF3D41BE10DF80019AA81 /* NSData+KPKXor.h in Headers */,
@@ -2734,6 +3146,32 @@
 			mainGroup = 4C5CF30E1BE10B650019AA81;
 			productRefGroup = 4C5CF3191BE10B650019AA81 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 48AE24172D74757B0061058F /* Products */;
+					ProjectRef = 48AE24162D74757B0061058F /* KissXML.xcodeproj */;
+				},
+				{
+					ProductGroup = 48AE240E2D74757B0061058F /* Products */;
+					ProjectRef = 48AE240D2D74757B0061058F /* KissXML.xcodeproj */;
+				},
+				{
+					ProductGroup = 48AE24012D74757B0061058F /* Products */;
+					ProjectRef = 48AE24002D74757B0061058F /* KissXML.xcodeproj */;
+				},
+				{
+					ProductGroup = 48AE23EB2D74757B0061058F /* Products */;
+					ProjectRef = 48AE23EA2D74757B0061058F /* KissXML.xcodeproj */;
+				},
+				{
+					ProductGroup = 48AE23F82D74757B0061058F /* Products */;
+					ProjectRef = 48AE23F72D74757B0061058F /* KissXML.xcodeproj */;
+				},
+				{
+					ProductGroup = 48AE23F42D74757B0061058F /* Products */;
+					ProjectRef = 48AE23F32D74757B0061058F /* KissXMLTests.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C5CF3171BE10B650019AA81 /* KeePassKit macOS */,
@@ -2746,6 +3184,86 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		48AE244C2D74757C0061058F /* KissXMLSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KissXMLSwiftTests.xctest;
+			remoteRef = 48AE244B2D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE244F2D74757C0061058F /* KissXMLSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KissXMLSwiftTests.xctest;
+			remoteRef = 48AE244E2D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE24522D74757C0061058F /* KissXMLTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KissXMLTests.xctest;
+			remoteRef = 48AE24512D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE24582D74757C0061058F /* KissXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KissXML.framework;
+			remoteRef = 48AE24572D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE245A2D74757C0061058F /* KissXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KissXML.framework;
+			remoteRef = 48AE24592D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE245C2D74757C0061058F /* KissXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KissXML.framework;
+			remoteRef = 48AE245B2D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE245E2D74757C0061058F /* KissXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KissXML.framework;
+			remoteRef = 48AE245D2D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE24612D74757C0061058F /* KissXMLTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KissXMLTests.xctest;
+			remoteRef = 48AE24602D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE24672D74757C0061058F /* KissXMLTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KissXMLTests.xctest;
+			remoteRef = 48AE24662D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE24692D74757C0061058F /* KissXMLTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KissXMLTests.xctest;
+			remoteRef = 48AE24682D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48AE246B2D74757C0061058F /* KissXMLTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KissXMLTests.xctest;
+			remoteRef = 48AE246A2D74757C0061058F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D5125211E9BCFA700D7EAF6 /* Resources */ = {
@@ -2840,7 +3358,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48AE24452D74757B0061058F /* Podfile.lock in Resources */,
+				48AE242F2D74757B0061058F /* Info.plist in Resources */,
+				48AE24222D74757B0061058F /* Gemfile in Resources */,
+				48AE24212D74757B0061058F /* .travis.yml in Resources */,
+				48AE24322D74757B0061058F /* KissXML.podspec in Resources */,
+				48AE24232D74757B0061058F /* Gemfile.lock in Resources */,
+				48AE24462D74757B0061058F /* KissXML.xcworkspace in Resources */,
+				48AE24202D74757B0061058F /* .swift-version in Resources */,
+				48AE243D2D74757B0061058F /* Podfile in Resources */,
+				48AE24492D74757B0061058F /* Podfile.lock in Resources */,
+				48AE243B2D74757B0061058F /* KissXML.xcworkspace in Resources */,
+				48AE24372D74757B0061058F /* KissXML.xcworkspace in Resources */,
+				48AE241E2D74757B0061058F /* .gitignore in Resources */,
+				48AE24442D74757B0061058F /* Podfile in Resources */,
+				48AE243E2D74757B0061058F /* Podfile.lock in Resources */,
 				4CA0C0C51FBB050B00CFFFBE /* Localizable.strings in Resources */,
+				48AE243C2D74757B0061058F /* Info.plist in Resources */,
+				48AE24362D74757B0061058F /* Info.plist in Resources */,
+				48AE24332D74757B0061058F /* LICENSE.txt in Resources */,
+				48AE241F2D74757B0061058F /* .hgignore in Resources */,
+				48AE243A2D74757B0061058F /* Podfile.lock in Resources */,
+				48AE24392D74757B0061058F /* Podfile in Resources */,
+				48AE24422D74757B0061058F /* KissXML.xcworkspace in Resources */,
+				48AE24482D74757B0061058F /* Podfile in Resources */,
+				48AE24382D74757B0061058F /* Info.plist in Resources */,
+				48AE24472D74757B0061058F /* Info.plist in Resources */,
+				48AE24432D74757B0061058F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3383,6 +3927,7 @@
 			files = (
 				4C0B9DB91DBFB4FC00E66CD6 /* KPKKdbTreeWriter.m in Sources */,
 				4C5CF48F1BE10E250019AA81 /* KPKLegacyHeaderUtility.m in Sources */,
+				48AE243F2D74757B0061058F /* KissXMLAssertionTests.m in Sources */,
 				4C5CF3DD1BE10DF80019AA81 /* NSString+KPKXmlUtilities.m in Sources */,
 				4C6166611F8FCCB7006346FE /* KPKTree+History.m in Sources */,
 				4C5CF40E1BE10E000019AA81 /* KPKDeletedNode.m in Sources */,
@@ -3404,6 +3949,7 @@
 				4CBE26341EC595D200B93BE2 /* KPKPair.m in Sources */,
 				4C639E561F6AC9AB00E6C5CD /* NSUIImage+KPKAdditions.m in Sources */,
 				4C6C6EFB1DDE231A0079C26D /* KPKTree+Synchronization.m in Sources */,
+				48AE24352D74757B0061058F /* README.markdown in Sources */,
 				4C5CF4261BE10E000019AA81 /* KPKWindowAssociation.m in Sources */,
 				4C5D91E51D89519C00029558 /* KPKNumber.m in Sources */,
 				4C11184E1DCCD93F00254E1D /* twofish.c in Sources */,
@@ -3428,6 +3974,7 @@
 				4C0B9DB51DBFB4FC00E66CD6 /* KPKKdbUnarchiver.m in Sources */,
 				4CA6DB8F1DC3574200650417 /* KPKChaCha20RandomStream.m in Sources */,
 				4C5CF4581BE10E100019AA81 /* KPKDataStreamReader.m in Sources */,
+				48AE242A2D74757B0061058F /* DDXMLDocument.m in Sources */,
 				4C0949631FD6F5B8004F2971 /* NSData+KPKBase32.m in Sources */,
 				4C5CF3D11BE10DF80019AA81 /* NSDate+KPKAdditions.m in Sources */,
 				4C5CF42E1BE10E070019AA81 /* KPKFormat.m in Sources */,
@@ -3436,6 +3983,7 @@
 				4C0B9D931DBFB49600E66CD6 /* KPKSalsa20RandomStream.m in Sources */,
 				4C0B9DB11DBFB4FC00E66CD6 /* KPKXmlTreeWriter.m in Sources */,
 				4C42AC0E20502EB900B5B205 /* NSString+KPKAdditions.m in Sources */,
+				48AE242E2D74757B0061058F /* DDXMLNode.m in Sources */,
 				4C5C82A51D79C13800A1DEA6 /* KPKChaCha20Cipher.m in Sources */,
 				4C8836B31FB4407900CD2CD1 /* KPKTokenStream.m in Sources */,
 				4C5CF4081BE10E000019AA81 /* KPKAutotype.m in Sources */,
@@ -3443,15 +3991,21 @@
 				4C5CF3D71BE10DF80019AA81 /* NSString+KPKCommands.m in Sources */,
 				4C5CF4191BE10E000019AA81 /* KPKMetaData.m in Sources */,
 				4CA1E48E1D8832BA00100002 /* encoding.c in Sources */,
+				48AE24252D74757B0061058F /* DDXMLElementAdditions.m in Sources */,
+				48AE24272D74757B0061058F /* NSString+DDXML.m in Sources */,
+				48AE24402D74757B0061058F /* KissXMLSwiftTests.swift in Sources */,
 				4C5CF3CB1BE10DF80019AA81 /* NSData+KPKHashedData.m in Sources */,
 				4C1118461DCCD88300254E1D /* KPKSalsa20Cipher.m in Sources */,
+				48AE24412D74757B0061058F /* KissXMLTests.m in Sources */,
 				4C7C3FA31D81D620008D8961 /* KPKKey.m in Sources */,
+				48AE242C2D74757B0061058F /* DDXMLElement.m in Sources */,
 				4CA1E4851D8832BA00100002 /* argon2.c in Sources */,
 				4C7C3FA61D81D620008D8961 /* KPKPasswordKey.m in Sources */,
 				4C5CF3D91BE10DF80019AA81 /* NSString+KPKEmpty.m in Sources */,
 				4C5CF4201BE10E000019AA81 /* KPKTimeInfo.m in Sources */,
 				4C5C82A31D79C13800A1DEA6 /* KPKAESCipher.m in Sources */,
 				4CE95AE71E97BC330019BBDC /* KPKData.m in Sources */,
+				48AE24342D74757B0061058F /* Package.swift in Sources */,
 				4CA1E4921D8832BA00100002 /* opt.c in Sources */,
 				4C88369C1FB34D7E00CD2CD1 /* KPKToken.m in Sources */,
 				4C5CF4151BE10E000019AA81 /* KPKGroup.m in Sources */,
@@ -3867,6 +4421,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lxml2";
@@ -3921,6 +4476,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = macosx;
