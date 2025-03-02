@@ -65,6 +65,7 @@ FOUNDATION_EXTERN NSString *const KPKWillChangeWindowAssociationNotification;
 FOUNDATION_EXTERN NSString *const KPKDidChangeWindowAssociationNotification;
 
 
+
 /* Entries declared as MetaEntries in KDB files
  * contain information that is stored in meta data in KDBX file
  */
@@ -142,6 +143,7 @@ FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitUserTemplates;        //
 /// Returns YES if the entry has valid Steam Time OTP settings.
 /// SteamOTP is a TimeOTP so hasTimeOTP will also return YES!
 @property (readonly, nonatomic) BOOL hasSteamOTP;
+
 
 /**
  Returns the current hmacOTP value without any changes to the entry

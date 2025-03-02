@@ -40,7 +40,8 @@ static const NSUInteger kKPKStrideSize = 256;
   uint8_t *dataPointer = buffer.mutableBytes;
   // TODO: check if this can benefit from dispatch_apply
   NSUInteger count = self.length / kKPKStrideSize;
-  dispatch_apply(count, DISPATCH_APPLY_AUTO, ^(size_t stride) {
+  dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+  dispatch_apply(count, queue, ^(size_t stride) {
     for(NSUInteger byteIndex = 0; byteIndex < kKPKStrideSize; byteIndex++) {
       NSUInteger actualIndex = stride * kKPKStrideSize + byteIndex;
       dataPointer[actualIndex] ^= keyPointer[actualIndex];
