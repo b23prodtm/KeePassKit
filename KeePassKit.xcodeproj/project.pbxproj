@@ -845,12 +845,12 @@
 		4C7C3F9D1D81D620008D8961 /* KPKKeyDerivation_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F8E1D81D620008D8961 /* KPKKeyDerivation_Private.h */; };
 		4C7C3F9E1D81D620008D8961 /* KPKCompositeKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F901D81D620008D8961 /* KPKCompositeKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C7C3F9F1D81D620008D8961 /* KPKCompositeKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C3F911D81D620008D8961 /* KPKCompositeKey.m */; };
-		4C7C3FA01D81D620008D8961 /* KPKFileKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F921D81D620008D8961 /* KPKFileKey.h */; };
+		4C7C3FA01D81D620008D8961 /* KPKFileKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F921D81D620008D8961 /* KPKFileKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C7C3FA11D81D620008D8961 /* KPKFileKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C3F931D81D620008D8961 /* KPKFileKey.m */; };
 		4C7C3FA21D81D620008D8961 /* KPKKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F941D81D620008D8961 /* KPKKey.h */; };
 		4C7C3FA31D81D620008D8961 /* KPKKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C3F951D81D620008D8961 /* KPKKey.m */; };
-		4C7C3FA41D81D620008D8961 /* KPKKey_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F961D81D620008D8961 /* KPKKey_Private.h */; };
-		4C7C3FA51D81D620008D8961 /* KPKPasswordKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F971D81D620008D8961 /* KPKPasswordKey.h */; };
+		4C7C3FA41D81D620008D8961 /* KPKKey_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F961D81D620008D8961 /* KPKKey_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C7C3FA51D81D620008D8961 /* KPKPasswordKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C3F971D81D620008D8961 /* KPKPasswordKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C7C3FA61D81D620008D8961 /* KPKPasswordKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C3F981D81D620008D8961 /* KPKPasswordKey.m */; };
 		4C7F84291DC8B6D2000B6EF7 /* NSData+KPKKeyComputation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7F84271DC8B6D2000B6EF7 /* NSData+KPKKeyComputation.h */; };
 		4C7F842A1DC8B6D2000B6EF7 /* NSData+KPKKeyComputation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7F84281DC8B6D2000B6EF7 /* NSData+KPKKeyComputation.m */; };
@@ -2526,10 +2526,14 @@
 				4C0B9DB41DBFB4FC00E66CD6 /* KPKKdbUnarchiver.h in Headers */,
 				4C5CF4161BE10E000019AA81 /* KPKIcon.h in Headers */,
 				4CA1E4991D8832BA00100002 /* thread.h in Headers */,
+				4C7C3FA01D81D620008D8961 /* KPKFileKey.h in Headers */,
+				4C7C3F9E1D81D620008D8961 /* KPKCompositeKey.h in Headers */,
 				4CD607AE1DFAAECE00C815E5 /* KPKPlatformIncludes.h in Headers */,
 				4CBE26331EC595D200B93BE2 /* KPKPair.h in Headers */,
 				4C1032171EB38E4400FD605F /* KPKSynchronizationOptions.h in Headers */,
+				4C7C3FA41D81D620008D8961 /* KPKKey_Private.h in Headers */,
 				4CDA35721EB88621003CD59F /* KPKScopedSet.h in Headers */,
+				4C7C3FA51D81D620008D8961 /* KPKPasswordKey.h in Headers */,
 				4C1118491DCCD90100254E1D /* KPKTwofishCipher.h in Headers */,
 				4CA1E4881D8832BA00100002 /* blake2.h in Headers */,
 				4C5CF4901BE10E250019AA81 /* KPKTypes.h in Headers */,
@@ -2568,22 +2572,18 @@
 				4C09495F1FD6F5B8004F2971 /* NSData+KPKBase32.h in Headers */,
 				4C4E23031D7DC10700E58983 /* NSDictionary+KPKVariant.h in Headers */,
 				4C5CF3CE1BE10DF80019AA81 /* NSData+KPKRandom.h in Headers */,
-				4C7C3F9E1D81D620008D8961 /* KPKCompositeKey.h in Headers */,
 				4C5CF3DC1BE10DF80019AA81 /* NSString+KPKXmlUtilities.h in Headers */,
 				4C5CF3D61BE10DF80019AA81 /* NSString+KPKCommands.h in Headers */,
-				4C7C3FA01D81D620008D8961 /* KPKFileKey.h in Headers */,
 				4C0B9D7D1DBFADE200E66CD6 /* KPKUnarchiver_Private.h in Headers */,
 				4C5CF3CC1BE10DF80019AA81 /* NSData+KPKKeyfile.h in Headers */,
 				4C62F6251D1D77DE0031795C /* KPKAttribute_Private.h in Headers */,
 				4CA1E4841D8832BA00100002 /* argon2.h in Headers */,
-				4C7C3FA51D81D620008D8961 /* KPKPasswordKey.h in Headers */,
 				4C5CF3DE1BE10DF80019AA81 /* NSUUID+KPKAdditions.h in Headers */,
 				4CDDED0B1F79685C00BBB014 /* KPKIcon_Private.h in Headers */,
 				4C42AC0A20502EB900B5B205 /* NSString+KPKAdditions.h in Headers */,
 				4C5CF3D81BE10DF80019AA81 /* NSString+KPKEmpty.h in Headers */,
 				4C5CF4801BE10E200019AA81 /* KPKModificationRecording.h in Headers */,
 				4C0B9D8E1DBFB49600E66CD6 /* KPKArc4RandomStream.h in Headers */,
-				4C7C3FA41D81D620008D8961 /* KPKKey_Private.h in Headers */,
 				4C7F84291DC8B6D2000B6EF7 /* NSData+KPKKeyComputation.h in Headers */,
 				4CA1E48F1D8832BA00100002 /* encoding.h in Headers */,
 				4C0B9DB61DBFB4FC00E66CD6 /* KPKKdbTreeReader.h in Headers */,
