@@ -21,14 +21,27 @@
 //
 
 @import Foundation;
-#import "KPKNode.h"
-#import "KPKModificationRecording.h"
-#import "KPKPlatformIncludes.h"
+#import <KeePassKit/KPKNode.h>
+#import <KeePassKit/KPKModificationRecording.h>
+#import <KeePassKit/KPKPlatformIncludes.h>
 
 @class KPKGroup;
 @class KPKBinary;
 @class KPKAttribute;
 @class KPKAutotype;
+
+FOUNDATION_EXTERN NSString *const KPKAttributeKeyKey;
+/*
+ Notifications sent when modifications happen
+ */
+FOUNDATION_EXTERN NSString *const KPKWillChangeEntryNotification;     // object == entry
+FOUNDATION_EXTERN NSString *const KPKDidChangeEntryNotification;      // object == entry
+FOUNDATION_EXTERN NSString *const KPKWillAddAttributeNotification;    // KPKAttributeKeyKey
+FOUNDATION_EXTERN NSString *const KPKDidAddAttributeNotification;     // KPKAttributeKeyKey
+FOUNDATION_EXTERN NSString *const KPKWillRemoveAttributeNotification; // KPKAttributeKeyKey
+FOUNDATION_EXTERN NSString *const KPKDidRemoveAttributeNotification;  // KPKAttributeKeyKey
+FOUNDATION_EXTERN NSString *const KPKWillChangeAttributeNotification; // KPKAttributeKeyKey == old key
+FOUNDATION_EXTERN NSString *const KPKDidChangeAttributeNotification;  // KPKAttributeKeyKey == new key
 
 /* Entries declared as MetaEntries in KDB files
  * contain information that is stored in meta data in KDBX file
@@ -48,12 +61,12 @@ FOUNDATION_EXTERN NSString *const KPKMetaEntryDatabaseColor;
 FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassXCustomIcon;
 FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassXCustomIcon2;
 FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassXGroupTreeState;
-FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitGroupUUIDs; // backport of group UUIDS of KDBX files to KDB UUIDs
-FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitDeletedObjects; // backport of deleted object of KDBX to KDB files
-FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitDatabaseName;
-FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitDatabaseDescription;
-FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitTrash;
-FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitUserTemplates;
+FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitGroupUUIDs;           // backport of group UUIDS of KDBX files to KDB UUIDs
+FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitDeletedObjects;       // backport of deleted object of KDBX to KDB files
+FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitDatabaseName;         // backport of database name of KDBX to KDB files
+FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitDatabaseDescription;  // backport of database decription of KDBX to KDB files
+FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitTrash;                // backport of trash settings of KDBX to KDB files
+FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitUserTemplates;        // backport of user templates of KDBX to KDB files
 
 /**
  *  Entries hold ciritcal information to store passwords
@@ -72,10 +85,11 @@ FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitUserTemplates;
 @property (nonatomic, copy) NSString *url;
 
 @property (nonatomic, copy, readonly) NSArray<KPKBinary *> *binaries;
-@property (nonatomic, copy) NSArray<NSString *> *tags;
+//@property (nonatomic, copy) NSArray<NSString *> *tags;
 @property (nonatomic, copy) NSUIColor *foregroundColor;
 @property (nonatomic, copy) NSUIColor *backgroundColor;
 @property (nonatomic, copy) NSString *overrideURL;
+@property (nonatomic) BOOL checkPasswordQuality;
 
 @property (nonatomic, copy, readonly) NSArray<KPKAttribute *> *attributes;
 @property (nonatomic, copy, readonly) NSArray<KPKAttribute *> *customAttributes;
@@ -86,11 +100,34 @@ FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitUserTemplates;
 @property (nonatomic, copy, readonly) NSArray<KPKEntry *> *history;
 @property (nonatomic, readonly) BOOL isHistory;
 /**
- *	Additional information is stores in MetaEntrie in KDB files.
+ *	Additional information is stored in MetaEntrie in KDB files.
  *  This function determines wheter the entry is a meta entry or not.
  *	@return	YES if this entry is a Meta Entry, NO if not
  */
 @property (nonatomic, readonly) BOOL isMeta;
+
+/**
+ Returns YES if the entry has valid Hmac OTP settings. If the settings are incomplete, wrong or missing NO will get returned
+ */
+@property (readonly, nonatomic) BOOL hasHmacOTP;
+/**
+ Returns YES if the entry has valid Time OTP settings.
+ Knowns formats are:
+ - KeePass (TimeOtp… and HmacOtp…)
+ - KeePassOTP  (TOTP Settings, TOTP Seed, otp)
+ */
+@property (readonly, nonatomic) BOOL hasTimeOTP;
+
+/**
+ Returns the current hmacOTP value without any changes to the entry
+ by calling [KPKEntry generateHmacOTPUpdateCounter:NO];
+ If you want to generate the HmacOTP value and increase the counter
+ send the message with YES to update the counter
+ */
+@property (readonly, nonatomic) NSString *hmacOTP;
+@property (readonly, nonatomic) NSString *timeOTP;
+
+- (NSString *)generateHmacOTPUpdateCounter:(BOOL)update;
 
 - (KPKComparsionResult)compareToEntry:(KPKEntry *)entry;
 
@@ -211,4 +248,3 @@ FOUNDATION_EXTERN NSString *const KPKMetaEntryKeePassKitUserTemplates;
 @property (nonatomic, readonly) NSUInteger estimatedByteSize;
 
 @end
-

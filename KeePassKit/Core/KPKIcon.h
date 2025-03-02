@@ -21,13 +21,15 @@
 //
 
 @import Foundation;
-#import "KPKPlatformIncludes.h"
+#import <KeePassKit/KPKPlatformIncludes.h>
 
 @interface KPKIcon : NSObject <NSCopying, NSSecureCoding>
 
 @property (nonatomic, readonly, strong) NSUUID *uuid;
-@property (nonatomic, strong) NSUIImage *image;
+@property (nonatomic, readonly, strong) NSUIImage *image;
 @property (nonatomic, readonly) NSString *encodedString;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSDate *modificationDate;
 
 - (instancetype)initWithImageAtURL:(NSURL *)imageLocation;
 - (instancetype)initWithUUID:(NSUUID *)uuid encodedString:(NSString *)encodedString;

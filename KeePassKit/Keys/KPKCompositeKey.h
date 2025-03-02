@@ -22,50 +22,48 @@
 
 @import Foundation;
 
-#import "KPKFormat.h"
+#import <KeePassKit/KPKFormat.h>
 
 @class KPKKeyDerivation;
 @class KPKCipher;
+@class KPKKey;
 
 /**
  *  The Composite Key to be used for encryption and decryption of databases
- *  It does not store key  nor password strings rather creates a composite key
+ *  It does not store key nor password strings rather creates a composite key
  *  every time the password or keyfile is set.
  */
-@interface KPKCompositeKey : NSObject
+@interface KPKCompositeKey : NSObject <NSSecureCoding>
 /**
- *  YES if the composite key has a password or keyfile set - that is, it's considered usable
+ *  YES if the composite key has some form of key set.
  */
-@property (nonatomic, readonly) BOOL hasPasswordOrKeyFile;
+@property (nonatomic, readonly) BOOL hasKeys;
+/** Creates a composite key with the supplied keys
+ @param keys an array of keys to be used for the composite key. The key is order-dependant!
+ */
+- (instancetype)initWithKeys:(NSArray <KPKKey *>*)keys;
 
-@property (nonatomic, readonly, getter=isValid) BOOL valid;
+- (BOOL)isEqualToKey:(KPKCompositeKey *)key;
+
 /**
- *  YES if the composite key has a password with a lenght longer than 0.
- *  Since a composite key can be created with am empty string as password or without one,
- *  this property considers both ways as no password given, although technically and emptry string is a password
+ Add a key to the composite key. The key is order dependant.
+ If you add the same keys in a differnt order, the final key is different!
+ @param key the key to be added. Re-adding the same key has no effect
+
  */
-@property (nonatomic, readonly) BOOL hasPassword;
-@property (nonatomic, readonly) BOOL hasKeyFile;
-/*
- The password class to be able to decrypt and encrypt databses
- Neither the password nor the keyfile are stored and just read
- and hashed into the composite key.
- 
- The Final key is then created before a write or read gets performend
- */
-- (instancetype)initWithPassword:(NSString *)password keyFileData:(NSData *)keyFileData;
+- (BOOL)addKey:(KPKKey *)key;
+
+- (BOOL)hasKeyOfClass:(Class)keyClass;
+
 /**
- *  Updates the password and keyfile for the composite key
- *  @param password the new password, can be nil
- *  @param keyFileData the new key file data, can be nil
+ Derives the final key data for the supplied parameters
+ @param format The database format to use the key for (kbd or kdbx)
+ @param seed the seed for the key derivation
+ @param cipher the cipher to use
+ @param keyDerivation the key derivation to use
+ @param hmacKey output for hmac check
+ @param error output of errors while deriving the key
  */
-- (void)setPassword:(NSString *)password andKeyFileData:(NSData *)keyFileData;
-
-/*
- @return YES if the password and/or key are correct for this composite key
- */
-- (BOOL)testPassword:(NSString *)password keyFileData:(NSData *)keyFileData forVersion:(KPKDatabaseFormat)version;
-
 - (NSData *)computeKeyDataForFormat:(KPKDatabaseFormat)format masterseed:(NSData *)seed cipher:(KPKCipher *)cipher keyDerivation:(KPKKeyDerivation *)keyDerivation hmacKey:(NSData **)hmacKey error:(NSError *__autoreleasing *)error;
 
 @end

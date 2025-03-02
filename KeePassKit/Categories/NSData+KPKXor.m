@@ -39,8 +39,6 @@ static const NSUInteger kKPKStrideSize = 256;
   const uint8_t *keyPointer = key.bytes;
   uint8_t *dataPointer = buffer.mutableBytes;
   // TODO: check if this can benefit from dispatch_apply
-  // DISPATCH_APPLY_AUTO is not available in macOS 10.11 (El Capitan). It was introduced in macOS 10.12 (Sierra)
-  // as part of the Grand Central Dispatch (GCD) framework.
   NSUInteger count = self.length / kKPKStrideSize;
   dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
   dispatch_apply(count, queue, ^(size_t stride) {

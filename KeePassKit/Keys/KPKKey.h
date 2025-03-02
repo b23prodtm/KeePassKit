@@ -8,14 +8,20 @@
 
 @import Foundation;
 
+#import <KeePassKit/KPKFormat.h>
+
 @interface KPKKey : NSObject
 
-@property (nonatomic, readonly, copy) NSData *data;
-
-+ (instancetype)keyWithContentOfURL:(NSURL *)url;
++ (instancetype)keyWithKeyFileData:(NSData *)data;
++ (instancetype)keyWithKeyFileData:(NSData *)data error:(NSError *__autoreleasing *)error;
 + (instancetype)keyWithPassword:(NSString *)password;
++ (instancetype)keyWithPassword:(NSString *)password error:(NSError *__autoreleasing *)error;
 
 - (instancetype)initWithPassword:(NSString *)password;
-- (instancetype)initWithContentOfURL:(NSURL *)url;
+- (instancetype)initWithPassword:(NSString *)password error:(NSError *__autoreleasing *)error;
+- (instancetype)initWithKeyFileData:(NSData *)data;
+- (instancetype)initWithKeyFileData:(NSData *)data error:(NSError *__autoreleasing *)error;
+
+- (NSData *)dataForFormat:(KPKDatabaseFormat)format;
 
 @end
